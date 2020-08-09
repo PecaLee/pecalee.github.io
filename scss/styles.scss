@@ -1,0 +1,98 @@
+@import "_reset";
+@import "_mixins";
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Staatliches&display=swap");
+
+/*나눔고딕 400, 700, 800*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  header {
+    width: 300px;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: rgba($color: #fff, $alpha: 0.6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Staatliches", cursive;
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+    nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 1.3rem;
+      ul.nav.navbar-nav {
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        li {
+          margin-bottom: 10px;
+          a {
+            @include aTag();
+          }
+          a.icon {
+            color: gray;
+          }
+        }
+      }
+      .copyright {
+        color: gray;
+      }
+    }
+  }
+  div.page {
+    padding-left: 320px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 20px;
+    width: 100%;
+    font-size: 2rem;
+    .page_wrapper {
+      font-family: "Nanum Gothic", sans-serif;
+      font-weight: 400;
+      width: 100%;
+      padding: 100px;
+      .wrapper_wrapper {
+        h2 {
+          font-weight: 800;
+          margin: 20px 0;
+          a {
+            @include aTag();
+            font-weight: 800;
+            margin: 20px 0;
+          }
+        }
+        p {
+          font-size: 1.3rem;
+          line-height: 1.8rem;
+          a {
+            color: darkblue;
+            text-decoration: none;
+          }
+        }
+        p.meta {
+          font-size: 0.8rem;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}
+
+.pagination {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+  font-size: 1.2rem;
+}
