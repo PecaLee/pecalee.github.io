@@ -170,3 +170,30 @@ header {
     }
   }
 }
+
+@media (max-width: 768px) {
+  header {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 15px;
+    .navbar {
+      .div.navbar-nav {
+        flex-direction: row;
+        li {
+          margin: 0 10px;
+        }
+      }
+    }
+    .codivight {
+      position: fixed;
+      bottom: 20px;
+    }
+  }
+  .page {
+    margin-left: 0;
+    width: 100%;
+  }
+}
