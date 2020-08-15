@@ -1,155 +1,167 @@
 @import "_reset";
+@import "_var";
 @import "_mixins";
-@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Staatliches&display=swap");
-
-/*나눔고딕 400, 700, 800*/
 
 * {
   box-sizing: border-box;
 }
 
 body {
-  header {
-    width: 300px;
-    height: 100vh;
-    position: fixed;
-    left: 0;
-    top: 0;
-    background-color: rgba($color: #fff, $alpha: 0.6);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-family: "Staatliches", cursive;
-    h1 {
-      font-size: 3rem;
-      margin-bottom: 20px;
-    }
-    nav {
+  width: 100%;
+  height: 100%;
+  a {
+    @include link();
+  }
+  h1 {
+    @include h1Text();
+  }
+
+  h2 {
+    @include h2Text();
+  }
+
+  h3 {
+    @include h3Text();
+  }
+}
+
+header {
+  width: 300px;
+  height: 100vh;
+  background-color: rgba($color: #fff, $alpha: 0.6);
+  top: 0;
+  left: 0;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .navbar {
+    margin: 30px 0;
+    .div.navbar-nav {
       display: flex;
       flex-direction: column;
       align-items: center;
-      font-size: 1.3rem;
-      ul.nav.navbar-nav {
-        margin-bottom: 20px;
+      justify-content: center;
+      @include h3Text();
+      & > li {
+        margin: 5px 0;
+      }
+      .navbar-link {
         display: flex;
-        flex-direction: column;
+        justify-content: center;
         align-items: center;
         li {
-          margin-bottom: 10px;
-          a {
-            @include aTag();
-          }
-          a.icon {
-            color: gray;
-          }
+          margin: 0 5px;
         }
-      }
-      .copyright {
-        color: gray;
       }
     }
   }
-  div.page {
-    padding-left: 320px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    padding-right: 20px;
-    width: 100%;
-    font-size: 2rem;
-    .page_wrapper {
-      font-family: "Nanum Gothic", sans-serif;
-      font-weight: 400;
-      width: 100%;
-      padding: 100px;
-      .wrapper_wrapper {
-        ul {
-          font-size: 1.1rem;
-          line-height: 1.5rem;
-          margin-left: 30px;
-          li {
-            p {
-              font-size: 1.1rem;
-              line-height: 1.5rem;
-              margin: 0;
+}
+
+.page {
+  margin-left: 300px;
+  width: calc(100% - 300px);
+  min-height: 100vh;
+  padding: 60px 30px;
+  @include inPostText();
+  h1 {
+    @include inPostTextH1();
+    margin: 30px 0;
+  }
+  h2 {
+    @include inPostTextH2();
+    margin: 30px 0;
+  }
+  h3 {
+    @include inPostTextH3();
+    margin: 30px 0;
+  }
+  img {
+    max-width: 300px;
+  }
+  .blogPost {
+    p {
+      margin: 15px 0;
+    }
+    .meta {
+      margin: 15px 0;
+    }
+    ul {
+      list-style-type: disc;
+      list-style-position: outside;
+      margin-left: 30px;
+    }
+    pre {
+      margin: 15px 0;
+      code {
+        padding: 10px;
+        color: cyan;
+        background-color: #1f1f1f;
+        border-radius: 8px;
+      }
+    }
+  }
+  .portfolioLayout {
+    .portfolioInner_portfolio {
+      margin-bottom: 30px;
+    }
+    .portfolioInner_article {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-auto-rows: 1fr;
+      align-items: center;
+      justify-items: center;
+      .portfolioPost {
+        width: 300px;
+        height: 300px;
+        overflow: hidden;
+        &:hover {
+          a {
+            .portfolioPost_title {
+              opacity: 1;
             }
-            list-style-type: disc;
+          }
+        }
+        a {
+          .portfolioPost_title {
+            position: absolute;
+            background-color: rgba($color: #000, $alpha: 0.5);
             ul {
-              li {
-                list-style-type: circle;
-                ul {
-                  li {
-                    list-style-type: square;
-                  }
-                }
-              }
+              width: 300px;
+              height: 300px;
+              display: flex;
+              padding-top: 230px;
+              justify-content: space-evenly;
+              align-items: center;
+              @include inPostTextH3();
+              color: white;
+            }
+            opacity: 0;
+          }
+          .portfolioPost_img {
+            position: absolute;
+            p {
+              width: 300px;
+              height: 300px;
+              overflow: hidden;
+              display: flex;
+              justify-content: center;
+              align-items: center;
             }
           }
-        }
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6 {
-          font-weight: 800;
-          margin: 20px 0;
-          a {
-            @include aTag();
-            font-weight: 800;
-            margin: 20px 0;
-          }
-        }
-        h1 {
-          font-size: 2.2rem;
-        }
-        h3 {
-          font-size: 1.8rem;
-        }
-        p {
-          font-size: 1.3rem;
-          line-height: 1.8rem;
-          margin: 10px 0;
-          a {
-            color: darkblue;
-            text-decoration: none;
-          }
-        }
-        p.meta {
-          font-size: 0.8rem;
-          margin-bottom: 20px;
         }
       }
     }
   }
-}
-
-.pagination {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  margin-top: 60px;
-  font-size: 1.2rem;
-}
-pre {
-  height: 100%;
-  display: flex;
-  align-items: center;
-  code {
-    font-size: 1.3rem;
-    margin-left: 30px;
-    padding: 2px 30px;
-    background-color: rgba($color: #f1f1f1, $alpha: 1);
-    color: rgba($color: #444444, $alpha: 0.6);
-    font-family: Consolas, "courier new";
+  .mainpage {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-content: center;
+    .mainpage_inner {
+      display: flex;
+      flex-direction: column;
+    }
   }
-}
-
-.textOverFlow {
-  height: 160px;
-  overflow: hidden;
-  word-wrap: break-word;
-  display: -webkit-box;
-  -webkit-line-clamp: initial;
-  -webkit-box-orient: vertical;
 }
