@@ -83,6 +83,10 @@ header {
   .blogPost {
     p {
       margin: 15px 0;
+      a {
+        color: blue;
+        text-decoration: underline;
+      }
     }
     .meta {
       margin: 15px 0;
@@ -195,5 +199,13 @@ header {
   .page {
     margin-left: 0;
     width: 100%;
+    .portfolioLayout
+      .portfolioInner_article
+      .portfolioPost
+      a
+      .portfolioPost_title {
+      background-color: rgba($color: #000, $alpha: 0.3);
+      opacity: 1;
+    }
   }
 }
