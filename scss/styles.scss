@@ -23,6 +23,9 @@ body {
   h3 {
     @include h3Text();
   }
+  .innerbody {
+    max-width: 1400px;
+  }
 }
 
 header {
