@@ -120,6 +120,7 @@ header {
         width: 300px;
         height: 300px;
         overflow: hidden;
+        border-radius: 10px;
         &:hover {
           a {
             .portfolioPost_title {
@@ -129,21 +130,37 @@ header {
         }
         a {
           .portfolioPost_title {
+            width: 300px;
+            height: 300px;
+            overflow: hidden;
+            border-radius: 10px;
             position: absolute;
-            background-color: rgba($color: #000, $alpha: 0.5);
+            background: linear-gradient(
+              0deg,
+              rgba(0, 0, 0, 0.5) 0%,
+              rgba(0, 0, 0, 0.3) 10%,
+              rgba(0, 0, 0, 0) 100%
+            );
             ul {
               width: 300px;
               height: 300px;
               display: flex;
+              flex-direction: column;
               padding-top: 230px;
-              justify-content: space-evenly;
-              align-items: center;
-              @include inPostTextH3();
+              padding-left: 20px;
+              align-items: left;
+              @include nanum();
+              font-size: 1.2rem;
+              font-weight: 800;
               color: white;
             }
             opacity: 0;
           }
           .portfolioPost_img {
+            width: 300px;
+            height: 300px;
+            overflow: hidden;
+            border-radius: 10px;
             position: absolute;
             p {
               width: 300px;
