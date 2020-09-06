@@ -227,6 +227,18 @@ header {
   }
 }
 
+@media (max-width: 1300px) {
+  .page .portfolioLayout .portfolioInner_article {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 999px) {
+  .page .portfolioLayout .portfolioInner_article {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
 @media (max-width: 767px) {
   header {
     width: 100%;
