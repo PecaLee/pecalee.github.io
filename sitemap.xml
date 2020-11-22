@@ -1,20 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://pecalee.github.io/</loc></url>
-  <url><loc>https://pecalee.github.io/blog/</loc></url>
-  <url><loc>https://pecalee.github.io/blog/makeBlog/</loc></url>
-  <url><loc>https://pecalee.github.io/portfolio/</loc></url>
-  <url><loc>https://pecalee.github.io/portfolio/dekobokozine_homepage/</loc></url>
-  <url><loc>https://pecalee.github.io/portfolio/dermed/</loc></url>
-  <url><loc>https://pecalee.github.io/portfolio/dognewyearcard/</loc></url>
-  <url><loc>https://pecalee.github.io/portfolio/flask_remote_job_finder/</loc></url>
-  <url><loc>https://pecalee.github.io/portfolio/herald/</loc></url>
-  <url><loc>https://pecalee.github.io/portfolio/logoworks/</loc></url>
-  <url><loc>https://pecalee.github.io/portfolio/momontum_clone/</loc></url>
-  <url><loc>https://pecalee.github.io/portfolio/pumpupbird/</loc></url>
-  <url><loc>https://pecalee.github.io/portfolio/pyungyung/</loc></url>
-  <url><loc>https://pecalee.github.io/portfolio/retrieve_opening/</loc></url>
-  <url><loc>https://pecalee.github.io/portfolio/timetimer/</loc></url>
-  <url><loc>https://pecalee.github.io/portfolio/webcommercial/</loc></url>
-  <url><loc>https://pecalee.github.io/portfolio/webcommercialVideo/</loc></url>
+  <url><loc>https://pecalee.github.io/about/</loc></url>
+  <url><loc>https://pecalee.github.io/works/</loc></url>
+  <url><loc>https://pecalee.github.io/works/01_IncenseTimer/</loc></url>
+  <url><loc>https://pecalee.github.io/works/02_Herald/</loc></url>
+  <url><loc>https://pecalee.github.io/works/03_lightup/</loc></url>
+  <url><loc>https://pecalee.github.io/works/04_pumpup/</loc></url>
+  <url><loc>https://pecalee.github.io/works/05_dekoboko/</loc></url>
+  <url><loc>https://pecalee.github.io/works/06_dermed/</loc></url>
+  <url><loc>https://pecalee.github.io/works/07_retrive/</loc></url>
+  <url><loc>https://pecalee.github.io/works/08_post/</loc></url>
+  <url><loc>https://pecalee.github.io/works/09_pyeongyeong/</loc></url>
+  <url><loc>https://pecalee.github.io/works/20_etc/</loc></url>
 </urlset>
